@@ -1,3 +1,5 @@
 com.android.ide.eclipse.adt.fixLegacyEditors=1
+com.android.ide.eclipse.adt.palette=SMALL_PREVIEW
 com.android.ide.eclipse.adt.sdk=C\:\\Users\\Adrian\\AppData\\Local\\Android\\android-sdk
+design.palette.flyout.width=191
 eclipse.preferences.version=1

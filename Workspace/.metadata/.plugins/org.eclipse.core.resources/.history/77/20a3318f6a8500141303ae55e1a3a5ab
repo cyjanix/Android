@@ -1,0 +1,19 @@
+package com.example.organizer;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.List;
+import java.util.Scanner;
+
+public class Zapis {
+	File file;
+	List<String> listaZadan = null;
+
+	public Zapis(File file) {
+		this.file = file;
+	}
+
+	public List<String> ZapisPliku(String zadanie) {
+		
+	}
+}

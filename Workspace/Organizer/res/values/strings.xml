@@ -5,5 +5,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="Test">Testujejemy testy.</string>
+    <string name="org">SmartOrganizer</string>
 
 </resources>
