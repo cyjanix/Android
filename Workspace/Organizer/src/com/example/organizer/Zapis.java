@@ -13,7 +13,7 @@ public class Zapis {
 		this.file = file;
 	}
 
-	public void ZapisPliku(String zadanie) {
+	public void ZapisPliku(StringBuffer zadanie) {
 		PrintWriter zapis = null;
 		try {
 			zapis = new PrintWriter(file.toString());

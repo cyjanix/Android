@@ -5,3 +5,6 @@
 1418764203604	Rename resource 'activity_main.xml'
 1418764495233	Rename field 'listView1'
 1418764504660	Rename field 'button1'
+1418852464018	Copy compilation unit
+1418852475092	Rename type 'CopyOfMainActivity'
+1418852484107	Rename type 'MainActivity'
