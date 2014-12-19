@@ -1,0 +1,6 @@
+package Kontakty;
+
+public class Kontakt {
+	 StringBuffer tekstWyjsciowy;
+
+}

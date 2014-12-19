@@ -1,0 +1,7 @@
+package Kontakty;
+
+public class Osoba {
+	String nazwa;
+	String nrTel;
+	String e_mail;
+}
