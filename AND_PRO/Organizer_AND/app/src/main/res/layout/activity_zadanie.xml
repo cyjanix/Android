@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.adrian.organizer_and.zadanie">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOWE ZADANIE"
+            android:id="@+id/tytul"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:id="@+id/b_menu"
+            android:layout_gravity="center_horizontal"
+            android:onClick="doMenu" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="LISTA ZADAŃ"
+            android:id="@+id/b_zadania"
+            android:layout_gravity="center_horizontal"
+            android:onClick="doZadan" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="KSIĄŻKA ADRESOWA"
+            android:id="@+id/b_ksiazka"
+            android:layout_gravity="center_horizontal"
+            android:onClick="doKsiazki" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="DODAJ"
+            android:id="@+id/b_dodaj"
+            android:layout_gravity="center_horizontal"
+            android:onClick="doMenu" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Imie i nazwisko"
+            android:ems="10"
+            android:id="@+id/imie"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telefon"
+            android:text="Nr telefonu" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/data"
+            android:text="Data" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/miejsce"
+            android:text="Miejsce" />
+
+    </LinearLayout>
+</RelativeLayout>
