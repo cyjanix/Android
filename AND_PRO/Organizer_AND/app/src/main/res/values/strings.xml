@@ -7,5 +7,6 @@
     <string name="title_activity_zadania">zadania</string>
     <string name="title_activity_zadanie">zadanie</string>
     <string name="title_activity_ksiazka">ksiazka</string>
+    <string name="nazwa">Nazwa:</string>
 
 </resources>

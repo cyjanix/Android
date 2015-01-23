@@ -8,44 +8,58 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ORGANIZER"
-            android:id="@+id/textView"
-            android:layout_gravity="center_horizontal"
-            android:elegantTextHeight="false"
-            android:textStyle="bold|italic"
-            android:textSize="40dp" />
+        android:layout_height="fill_parent"
+        android:weightSum="1">
 
         <Button
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Zadania"
+            android:text="LISTA ZADAŃ"
             android:id="@+id/button"
             android:layout_gravity="center_horizontal"
             android:textSize="20dp"
-            android:onClick="doZadan"
+            android:onClick="toTasks"
             android:nestedScrollingEnabled="false" />
+
+        <ImageView
+            android:layout_width="232dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.36"
+            android:src="@drawable/abc_ic_menu_paste_mtrl_am_alpha" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Autorzy:"
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Adrian Tomys"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Adam Pająk"
+            android:id="@+id/textView3" />
 
         <Button
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Wyjdź"
             android:id="@+id/button2"
-            android:layout_gravity="center_horizontal"
             android:textSize="20dp"
-            android:onClick="wyjdz" />
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:id="@+id/imageView"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@android:drawable/ic_menu_call" />
+            android:onClick="Exit"
+            android:layout_marginTop="20dp" />
 
     </LinearLayout>
 </RelativeLayout>

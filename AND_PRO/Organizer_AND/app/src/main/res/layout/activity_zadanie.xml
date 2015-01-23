@@ -4,29 +4,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.adrian.organizer_and.zadanie">
+    tools:context="com.example.adrian.class_activity.Task">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NOWE ZADANIE"
-            android:id="@+id/tytul"
-            android:layout_gravity="center_horizontal"
-            android:textSize="30dp"
-            android:textStyle="bold|italic" />
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="MENU"
-            android:id="@+id/b_menu"
-            android:layout_gravity="center_horizontal"
-            android:onClick="doMenu" />
 
         <Button
             android:layout_width="300dp"
@@ -34,7 +17,7 @@
             android:text="LISTA ZADAŃ"
             android:id="@+id/b_zadania"
             android:layout_gravity="center_horizontal"
-            android:onClick="doZadan" />
+            android:onClick="toTasks" />
 
         <Button
             android:layout_width="300dp"
@@ -42,42 +25,48 @@
             android:text="KSIĄŻKA ADRESOWA"
             android:id="@+id/b_ksiazka"
             android:layout_gravity="center_horizontal"
-            android:onClick="doKsiazki" />
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="DODAJ"
-            android:id="@+id/b_dodaj"
-            android:layout_gravity="center_horizontal"
-            android:onClick="doMenu" />
+            android:onClick="toBook" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="Imie i nazwisko"
+            android:inputType="textPersonName|none"
             android:ems="10"
-            android:id="@+id/imie"
-            android:layout_gravity="center_horizontal" />
+            android:id="@+id/imie_zad"
+            android:layout_gravity="center_horizontal"
+            android:editable="false"
+            android:enabled="true"
+            android:hint="Imie i Nazwisko"
+            android:layout_marginTop="30dp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/telefon"
-            android:text="Nr telefonu" />
+            android:id="@+id/telefon_zad"
+            android:inputType="none"
+            android:hint="Nr telefonu" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/data"
-            android:text="Data" />
+            android:singleLine="false"
+            android:hint="Data: DD/MM/YYYY" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/miejsce"
-            android:text="Miejsce" />
+            android:hint="Miejsce" />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b_dodaj"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="dodajNowe"
+            android:background="@android:drawable/ic_input_add" />
 
     </LinearLayout>
 </RelativeLayout>
